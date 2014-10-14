@@ -479,6 +479,7 @@ p {
 .alert {
   padding: 1em;
   margin-bottom: 1.375em;
+  margin-top: 1.375em;
   color: #fff;
   background-color: #95a5a6;
   border-radius: 5px;
@@ -680,7 +681,8 @@ input {
   border: none;
   background: none;
   border-left: 2px solid #55b2e9;
-  color: #797979; }
+  color: #797979;
+  box-sizing: border-box; }
   input:focus {
     border: 2px solid #55b2e9;
     border-left: 6px solid #55b2e9;
@@ -751,3 +753,49 @@ a {
   [role="banner"] {
     margin-bottom: 1.375em; }
 
+  section div {
+    padding: 1.8em 1em 0.93em 1em; }
+
+  .hero {
+    zoom: 1; }
+    .hero:before, .hero:after {
+      content: "";
+      display: table; }
+    .hero:after {
+      clear: both; }
+    .hero .product-image {
+      height: 22em;
+      width: 66%;
+      float: left;
+      margin-left: 17%; }
+
+  .partner-quotes div {
+    width: 15%; }
+  .partner-quotes .twain {
+    margin-right: 0 !important;
+    float: right !important; }
+
+  .executive-team div {
+    padding: 0; }
+    .executive-team div img {
+      width: 100%;
+      max-width: 100%; }
+  .executive-team .ceo {
+    width: 32%; }
+  .executive-team .other-executives {
+    width: 66%;
+    padding: 0;
+    margin-right: 0 !important;
+    float: right !important; }
+    .executive-team .other-executives > div {
+      float: left;
+      margin-right: 2%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .executive-team .other-executives div {
+      width: 22.72727%;
+      margin-right: 3.0303%; }
+    .executive-team .other-executives .cio {
+      margin-right: 0 !important;
+      float: right !important; } }

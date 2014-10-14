@@ -7,3 +7,14 @@
 code {
   background: white;
 }
+
+.table-of-contents {
+  list-style: none;
+  line-height: 2em;
+  font-size: 1.5em;
+  padding-left: 0;
+}
+.table-of-contents a {
+  color: #55b2e9;
+  
+}
