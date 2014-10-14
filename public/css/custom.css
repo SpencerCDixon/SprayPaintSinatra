@@ -18,3 +18,8 @@ code {
   color: #55b2e9;
   
 }
+.search {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}

@@ -753,9 +753,6 @@ a {
   [role="banner"] {
     margin-bottom: 1.375em; }
 
-  section div {
-    padding: 1.8em 1em 0.93em 1em; }
-
   .hero {
     zoom: 1; }
     .hero:before, .hero:after {
