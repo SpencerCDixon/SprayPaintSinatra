@@ -14,7 +14,6 @@ get '/' do
 end
 
 get '/documentation' do
-  binding.pry
   @html = HtmlFormatter.new
   erb :documentation
 end

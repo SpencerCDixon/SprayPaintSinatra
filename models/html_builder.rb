@@ -1,14 +1,22 @@
 require 'rouge'
-require 'pry'
 
 class HtmlFormatter
 
-  attr_reader :alert_finished, :formatter, :lexer
+  attr_reader :alert_finished, :buttons_finished, :formatter, :lexer
+
   def initialize
-    binding.pry
     @alert_finished = formatter.format(lexer.lex(alert))
+    @buttons_finished = formatter.format(lexer.lex(buttons))
+  end
+  
+  def formatter
+    @formatter ||= Rouge::Formatters::HTML.new
   end
 
+  def lexer
+    @lexer ||= Rouge::Lexer.find_fancy("html", alert) || Rouge::Lexers::PlainText
+  end
+  
   def alert
     <<-eos
     <div class="alert">
@@ -33,11 +41,48 @@ class HtmlFormatter
     eos
   end
 
-  def formatter
-    @formatter ||= Rouge::Formatters::Html.new
+  def buttons
+    <<-eos
+      <div class="row">
+        <div class="col-6">
+          <div class="btn default"> Home </div>
+          <div class="btn med default"> Home </div>
+          <div class="btn lrg default"> Home </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="btn success"> Sign in </div>
+          <div class="btn med success"> Sign in </div>
+          <div class="btn lrg success"> Sign in </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="btn info"> Sign out </div>
+          <div class="btn med info"> Sign out </div>
+          <div class="btn lrg info"> Sign out </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="btn warning"> Contact </div>
+          <div class="btn med warning"> Contact </div>
+          <div class="btn lrg warning"> Contact </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="btn danger"> About Us </div>
+          <div class="btn med danger"> About Us </div>
+          <div class="btn lrg danger"> About Us </div>
+        </div>
+      </div>
+    eos
   end
 
-  def lexer
-    @lexer ||= Rouge::Lexer.find_fancy("html", alert) || Rouge::Lexers::PlainText
-  end
 end

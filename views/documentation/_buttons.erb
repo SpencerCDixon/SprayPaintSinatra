@@ -1,0 +1,48 @@
+<h1>Buttons: </h1>
+<p> Buttons have one primary class called <code> .btn </code> that will turn any div or anchor tag into a default button.  In order to edit the button you can change the size with <code>.small .med .lrg </code> and the colors can be changed with the four different color themes: <code> .success .info .warning .danger </code></p>
+ <p class="notify"> Rendered HTML </p>
+
+<div class="row">
+  <div class="col-6">
+      <div class="btn default"> Home </div>
+      <div class="btn med default"> Home </div>
+      <div class="btn lrg default"> Home </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="btn success"> Sign in </div>
+    <div class="btn med success"> Sign in </div>
+    <div class="btn lrg success"> Sign in </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="btn info"> Sign out </div>
+    <div class="btn med info"> Sign out </div>
+    <div class="btn lrg info"> Sign out </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="btn warning"> Contact </div>
+    <div class="btn med warning"> Contact </div>
+    <div class="btn lrg warning"> Contact </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+      <div class="btn danger"> About Us </div>
+      <div class="btn med danger"> About Us </div>
+      <div class="btn lrg danger"> About Us </div>
+  </div>
+</div>
+
+<p class="notify"> HTML </p>
+<div class="code-display">
+  <%= @html.buttons_finished %>
+</div>
