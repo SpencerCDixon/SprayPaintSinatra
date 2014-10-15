@@ -1,0 +1,54 @@
+<h1 id="navigation"> Navigation Bars </h1>
+<p>
+There are two main types of nav bars: normal and inverse.  If you plan on using an image for your logo put the image tag inside of a div with a class of <code> .logo </code>.  We recommend making the logo image 200px wide and 40 px tall.  To give one of the options on the menu bar a highlight use the <code> .call-to-action </code> class.  Whichever list item has the <code> .active </code> class will be the one with the blue line underneath it.
+
+
+</p>
+<h2> Normal Navbar </h2>
+ <p class="notify"> Rendered HTML </p>
+  <nav class="nav">
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <ul>
+      <li><a href="#" class="call-to-action"> Login </a></li>
+      <li><a href="#"> About  </a></li>
+      <li><a href="#"> Contact  </a></li>
+      <li><a href="#" class="active"> Home  </a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <p class="notify"> HTML </p>
+  </div>
+
+  <div class="code-display">
+    <%= @html.nav_normal_finished %>
+  </div>
+
+  <h2> Inverse Navbar </h2>
+  <p class="notify"> Rendered HTML </p>
+
+  <div>
+
+  <nav class="nav-inverse">
+    <div class="brand">
+      <h1> Your Brand </h1>
+    </div>
+    <ul>
+      <li><a href="#" class="call-to-action"> Sign Up  </a></li>
+      <li><a href="#"> About  </a></li>
+      <li><a href="#"> Contact  </a></li>
+      <li><a href="#" class="active"> Home  </a></li>
+    </ul>
+  </nav>
+  </div>
+
+  <div>
+    <p class="notify"> HTML </p>
+  </div>
+
+  <div class="code-display">
+    <%= @html.nav_inverse_finished %>
+  </div>
+

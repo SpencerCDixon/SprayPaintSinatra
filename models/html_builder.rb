@@ -2,11 +2,14 @@ require 'rouge'
 
 class HtmlFormatter
 
-  attr_reader :alert_finished, :buttons_finished, :formatter, :lexer
+  attr_reader :alert_finished, :buttons_finished, :formatter, :lexer, :nav_normal_finished, :nav_inverse_finished, :form_std_finished
 
   def initialize
     @alert_finished = formatter.format(lexer.lex(alert))
     @buttons_finished = formatter.format(lexer.lex(buttons))
+    @nav_normal_finished = formatter.format(lexer.lex(nav_normal))
+    @nav_inverse_finished = formatter.format(lexer.lex(nav_inverse))
+    @form_std_finished = formatter.format(lexer.lex(form_standard))
   end
   
   def formatter
@@ -82,6 +85,55 @@ class HtmlFormatter
           <div class="btn lrg danger"> About Us </div>
         </div>
       </div>
+    eos
+  end
+
+  def nav_normal
+    <<-eos
+      <nav class="nav">
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
+        <ul>
+          <li><a href="#" class="call-to-action"> Login </a></li>
+          <li><a href="#"> About  </a></li>
+          <li><a href="#"> Contact  </a></li>
+          <li><a href="#" class="active"> Home  </a></li>
+        </ul>
+      </nav>
+    eos
+  end
+
+  def nav_inverse
+    <<-eos
+      <nav class="nav-inverse">
+        <div class="brand">
+          <h1> Your Brand </h1>
+        </div>
+        <ul>
+          <li><a href="#" class="call-to-action"> Sign Up  </a></li>
+          <li><a href="#"> About  </a></li>
+          <li><a href="#"> Contact  </a></li>
+          <li><a href="#" class="active"> Home  </a></li>
+        </ul>
+      </nav>
+    eos
+  end
+
+  def form_standard
+    <<-eos
+      <form class="standard">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn info">Submit</button>
+      </form>
     eos
   end
 

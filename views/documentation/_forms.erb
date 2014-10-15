@@ -1,0 +1,45 @@
+<h1 id="forms"> Forms </h1>
+<p>
+Forms are pretty simple as of right now.  All you need to do is attach <code> .standard </code> or <code> .ninja </code> to the form tag in order to have it styled as a standard or ninja form.  For the submit button you can use any of the button classes. <code> .btn (.info/.success/.warning/.danger) </code>
+
+</p>
+  <h2>Standard Forms: </h2>
+
+ <p class="notify"> Rendered HTML </p>
+  <form class="standard">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <button type="submit" class="btn info">Submit</button>
+  </form>
+
+  <div>
+    <p class="notify"> HTML </p>
+  </div>
+
+  <div class="code-display">
+    <%= @html.form_std_finished %>
+  </div>
+
+  <h1> Ninja Forms: </h1>
+  <p> *** Replace <code> .standard </code> with <code> .ninja </code>  ***</p>
+
+  <form class="ninja">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <button type="submit" class="btn info">Submit</button>
+  </form>
+
