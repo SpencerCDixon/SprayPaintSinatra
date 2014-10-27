@@ -1,0 +1,47 @@
+<h1 id="tables">Tables</h1>
+<p>Tables are simple.  Just use normal HTML to build your table and if you decide you want any rows to have a hover state just add a class of <code>hover</code></p>
+<p class="notify"> Rendered HTML </p>
+ <table>
+    <thead>
+      <tr>
+        <th> Table header </th>
+        <th> Table header </th>
+        <th> Table header </th>
+        <th> Table header </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover">
+        <td> This row has hover state. </td>
+        <td> Hover over me to see it. </td>
+        <td> Hover over me to see it.</td>
+        <td> This row has hover state. </td>
+      </tr>
+      <tr>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+      </tr>
+      <tr>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+      </tr>
+      <tr>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+        <td> Content goes here. </td>
+      </tr>
+    </tbody>
+  </table>
+
+   
+
+
+<p class="notify"> HTML </p>
+<div class="code-display">
+  <%= @html.tables_finished %>
+</div>

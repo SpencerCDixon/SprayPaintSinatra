@@ -1,0 +1,50 @@
+<h1 id="grid">Using The Grid System  </h1>
+<p class="alert warning">Make sure to read how to use the grid system carefully.  Refer to screencast for a more in-depth guide.</p>
+<ol>
+  <li>Grid uses rows to organize content</li>
+  <li>For rows to be centered on page they need to be wrapped in a container</li>
+  <li>Each row can have up to 6 columns</li>
+  <li>The last column in ever row needs to be specified with "last" class</li>
+  <li>To create an offset make empty columns for your offset</li>
+</ol>
+
+<p class="notify"> Rendered HTML </p>
+<div class="row">
+  <div class="col-1 bg"> 1 </div>
+  <div class="col-1 bg"> 1 </div>
+  <div class="col-1 bg"> 1 </div>
+  <div class="col-1 bg"> 1 </div>
+  <div class="col-1 bg"> 1 </div>
+  <div class="col-1 bg last"> 1 </div>
+</div>
+
+<div class="row">
+  <div class="col-2 bg"> 2 </div>
+  <div class="col-2 bg"> 2 </div>
+  <div class="col-2 bg last"> 2 </div>
+</div>
+
+<div class="row">
+  <div class="col-3 bg"> 3 </div>
+  <div class="col-3 bg last"> 3 </div>
+</div>
+
+<div class="row">
+  <div class="col-4 bg"> 4 </div>
+  <div class="col-2 bg last"> 2 </div>
+</div>
+
+<div class="row">
+  <div class="col-5 bg"> 5 </div>
+  <div class="col-1 bg last"> 1 </div>
+</div>
+
+<div class="row">
+  <div class="col-6 bg"> 6 </div>
+</div>
+
+<p class="notify"> HTML </p>
+<div class="code-display">
+  <%= @html.grid_system_finished %>
+</div>
+ 

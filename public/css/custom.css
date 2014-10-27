@@ -16,11 +16,16 @@ code {
   font-family: "Raleway";
 }
 .table-of-contents a {
-  color: #55b2e9;
+  /* color: #55b2e9; */
+  color: black;
 }
 .fixed-content {
   position: fixed;
   top: 0;
+}
+.toc-inner li {
+  font-size: .75em;
+  line-height: 1.4em;
 }
 .search {
   margin: 0 auto;
@@ -28,7 +33,8 @@ code {
   width: 100%;
 }
 body {
-  background: #DDD;
+  /* background-image: url('/img/tweed.png') ; */
+  background: #ddd;
 }
 .logo-documentation {
   height: 50px;
