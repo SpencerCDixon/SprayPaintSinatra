@@ -13,13 +13,30 @@ code {
   line-height: 2em;
   font-size: 1.5em;
   padding-left: 0;
+  font-family: "Raleway";
 }
 .table-of-contents a {
   color: #55b2e9;
-  
+}
+.fixed-content {
+  position: fixed;
+  top: 0;
 }
 .search {
   margin: 0 auto;
   display: block;
   width: 100%;
+}
+body {
+  background: #DDD;
+}
+.logo-documentation {
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-bottom: 0;
+  padding-top: 20px;
 }
