@@ -8,3 +8,5 @@
   screen
 - Include headers in documentation
 
+
+- Make buttons have same color border & make border thicker
