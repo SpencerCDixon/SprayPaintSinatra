@@ -46,3 +46,10 @@ body {
   padding-bottom: 0;
   padding-top: 20px;
 }
+
+.table-of-contents a {
+  color: #55b2e9; 
+}
+.table-of-contents li ul li a {
+  color: #f2713a;
+}
